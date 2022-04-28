@@ -14,6 +14,10 @@ export default {
       options: ["tiny", "small", "medium", "large"],
     },
   },
+  parameters: {
+    componentSubtitle:
+      "Displays an image that represents a user or organization",
+  },
 };
 
 const Template = (args) => <Avatar {...args} />;
@@ -44,6 +48,12 @@ export const Sizes = (args) => (
 Sizes.args = {
   username: "John Doe",
   src: "https://avatars.githubusercontent.com/u/40147432",
+};
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
 };
 
 export const Initials = (args) => (
