@@ -22,15 +22,15 @@ export const Controls = Template.bind({});
 Controls.args = {
   loading: false,
   size: "tiny",
-  username: "Dominic Nguyen",
-  src: "https://avatars2.githubusercontent.com/u/263385",
+  username: "John Doe",
+  src: "https://avatars.githubusercontent.com/u/40147432",
 };
 
 export const Standard = (args) => <Avatar {...args} />;
 Standard.args = {
   size: "large",
-  username: "Tom Coleman",
-  src: "https://avatars2.githubusercontent.com/u/132554",
+  username: "John Doe",
+  src: "https://avatars.githubusercontent.com/u/40147432",
 };
 
 export const Sizes = (args) => (
@@ -42,8 +42,8 @@ export const Sizes = (args) => (
   </div>
 );
 Sizes.args = {
-  username: "Tom Coleman",
-  src: "https://avatars2.githubusercontent.com/u/132554",
+  username: "John Doe",
+  src: "https://avatars.githubusercontent.com/u/40147432",
 };
 
 export const Initials = (args) => (
