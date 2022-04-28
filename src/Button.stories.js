@@ -20,6 +20,17 @@ function ButtonWrapper(props) {
 export default {
   title: "Design System/Button",
   component: Button,
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: "Deep Forest Green", value: "#004751" },
+        { name: "Dark Grey", value: "#1B1D27" },
+        { name: "Medium Grey", value: "#3C3F4D" },
+        { name: "Default Grey", value: "#575B71" },
+        { name: "Light Grey", value: "#DCDEE7" },
+      ],
+    },
+  },
 };
 
 export const AllButtons = (args) => (

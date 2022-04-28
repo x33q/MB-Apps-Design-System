@@ -7,6 +7,17 @@ export default {
   parameters: {
     componentSubtitle: "A list of Avatars",
   },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: "Deep Forest Green", value: "#004751" },
+        { name: "Dark Grey", value: "#1B1D27" },
+        { name: "Medium Grey", value: "#3C3F4D" },
+        { name: "Default Grey", value: "#575B71" },
+        { name: "Light Grey", value: "#DCDEE7" },
+      ],
+    },
+  },
 };
 
 const Template = (args) => <AvatarList {...args} />;
