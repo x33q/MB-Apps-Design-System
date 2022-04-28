@@ -34,6 +34,7 @@ export const AllButtons = (args) => (
       Disabled
     </Button>
     <br />
+    <br />
     <Button appearance="primary" isLoading>
       Primary
     </Button>
@@ -49,6 +50,7 @@ export const AllButtons = (args) => (
     <Button appearance="outline" isLoading loadingText="Custom...">
       Outline
     </Button>
+    <br />
     <br />
     <Button appearance="primary" size="small">
       Primary

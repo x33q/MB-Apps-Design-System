@@ -14,6 +14,10 @@ export default {
       options: ["tiny", "small", "medium", "large"],
     },
   },
+  parameters: {
+    componentSubtitle:
+      "Displays an image that represents a user or organization",
+  },
 };
 
 const Template = (args) => <Avatar {...args} />;
@@ -33,6 +37,13 @@ Standard.args = {
   src: "https://avatars.githubusercontent.com/u/40147432",
 };
 
+Standard.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
+};
+
 export const Sizes = (args) => (
   <div>
     <Avatar {...args} size="large" />
@@ -45,6 +56,12 @@ Sizes.args = {
   username: "John Doe",
   src: "https://avatars.githubusercontent.com/u/40147432",
 };
+Sizes.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
+};
 
 export const Initials = (args) => (
   <div>
@@ -54,6 +71,13 @@ export const Initials = (args) => (
     <Avatar username="Michael Shilman" />
   </div>
 );
+
+Initials.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
+};
 
 export const Loading = (args) => (
   <div>
@@ -65,6 +89,12 @@ export const Loading = (args) => (
 );
 Loading.args = {
   loading: true,
+};
+Loading.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
 };
 
 export const Large = (args) => (
@@ -78,3 +108,10 @@ export const Large = (args) => (
     />
   </div>
 );
+
+Large.parameters = {
+  docs: {
+    // The story now contains a description
+    storyDescription: "4 sizes are supported.",
+  },
+};
