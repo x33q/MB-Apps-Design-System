@@ -1,5 +1,7 @@
-import { createGlobalStyle, css } from 'styled-components';
-import { color, typography } from './styles';
+import { createGlobalStyle, css } from "styled-components";
+import { color, typography } from "./styles";
+export const fontUrl =
+  "https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900";
 
 export const bodyStyles = css`
   font-family: ${typography.type.primary};
@@ -22,7 +24,6 @@ export const bodyStyles = css`
   h4,
   h5,
   h6 {
-    font-weight: ${typography.weight.regular};
     margin: 0;
     padding: 0;
   }
