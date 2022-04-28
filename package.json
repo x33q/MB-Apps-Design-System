@@ -57,10 +57,12 @@
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
     "@storybook/addon-links": "^6.4.22",
+    "@storybook/addons": "^6.4.22",
     "@storybook/node-logger": "^6.4.22",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
+    "@storybook/theming": "^6.4.22",
     "chromatic": "^6.5.4",
     "prettier": "^2.6.2"
   }

@@ -1,13 +1,24 @@
-import React from 'react';
-import { Badge } from './Badge';
-import { Icon } from './Icon';
+import React from "react";
+import { Badge } from "./Badge";
+import { Icon } from "./Icon";
 
 export default {
-  title: 'Design System/Badge',
+  title: "Design System/Badge",
   component: Badge,
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: "Deep Forest Green", value: "#004751" },
+        { name: "Dark Grey", value: "#1B1D27" },
+        { name: "Medium Grey", value: "#3C3F4D" },
+        { name: "Default Grey", value: "#575B71" },
+        { name: "Light Grey", value: "#DCDEE7" },
+      ],
+    },
+  },
 };
 
-export const AllBadges = (args) =>(
+export const AllBadges = (args) => (
   <div>
     <Badge status="positive">Positive</Badge>
     <Badge status="negative">Negative</Badge>
@@ -20,10 +31,10 @@ export const AllBadges = (args) =>(
     </Badge>
   </div>
 );
-AllBadges.args={
-  icon:'facehappy',
-  inline:true
-}
+AllBadges.args = {
+  icon: "facehappy",
+  inline: true,
+};
 
 AllBadges.storyName = "all badges";
 
@@ -35,7 +46,7 @@ export const Error = () => <Badge status="error">Error</Badge>;
 
 export const WithIcon = (args) => (
   <Badge {...args}>
-    <Icon {...args}/>
+    <Icon {...args} />
     with icon
   </Badge>
 );
